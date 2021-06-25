@@ -1,5 +1,5 @@
-# FROM ubuntu:16.04 AS ubuntu
-FROM php:7.4-apache
+# Pull php:7.3-apache and set environment
+FROM php:7.3-apache
 ENV DEBIAN_FRONTEND noninteractive
 
 # Composer install
@@ -42,3 +42,6 @@ RUN echo "extension=pdo_sqlsrv.so" > /usr/local/etc/php/conf.d/docker-php-ext-so
 RUN apt-get update
 RUN env ACCEPT_EULA=Y apt-get -y --fix-missing install git libxml2-dev
 RUN docker-php-ext-install soap
+
+# Install git
+RUN apt-get -y --fix-missing install git
