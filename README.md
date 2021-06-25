@@ -1,6 +1,5 @@
 # Project Setup Steps #
-### PHP Project setup with MSSQL, ODBC, SQLSRV, Composer, git pre-configured. 
-###
+### PHP Project setup with MSSQL, ODBC, SQLSRV, Composer, git pre-configured. ###
 
 1.  Create a directory called configurations in /home/user directory.
 2.  Inside configurations, create a file called backend.conf
