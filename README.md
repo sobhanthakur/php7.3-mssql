@@ -21,7 +21,7 @@
 
 4.  sudo su
 5.  docker pull sobhanthakur/php7.3-mssql 
-6.  docker run -v /home/user/configurations:/etc/apache2/sites-available -v <path_to_project_dir_in_local_machine>:/var/www/html/<project_name>  --name php-mssql-container -d php7.3-mssql
+6.  docker run -v /home/user/configurations:/etc/apache2/sites-available -v <path_to_project_dir_in_local_machine>:/var/www/html/<project_name>  -p 8000:8000 --name php-mssql-container -d php7.3-mssql
 7.  docker ps -a
 8.  copy the container ID for the above container
 9.  docker exec -it `<ContainerID>` /bin/bash
