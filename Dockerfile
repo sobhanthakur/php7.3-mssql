@@ -24,6 +24,7 @@ RUN dpkg -i libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb
 RUN apt-get -y --fix-missing install mssql-server=14.0.3192.2-2
 RUN sed -i 's@sudo, "-EH", @@;s@"sudo", @@g' /opt/mssql/lib/mssql-conf/mssqlconfhelper.py
 RUN sed -i 's@sudo -EH@su@' /opt/mssql/lib/mssql-conf/invokesqlservr.sh
+RUN rm libssl1.0.0_1.0.1t-1+deb8u12_amd64.deb libjemalloc1_3.6.0-11_amd64.deb
 
 # ODBC Driver
 RUN apt-get update

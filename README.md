@@ -1,7 +1,7 @@
 # Project Setup Steps #
 ### Symfony Project setup with MSSQL, ODBC, SQLSRV, Composer, git pre-configured. ###
 
-1.  Create a directory called configurations in /home/user directory.
+1.  Create a directory called configurations in /home/$USER directory.
 2.  Inside configurations, create a file called backend.conf
 3.  Paste the following content:
         
