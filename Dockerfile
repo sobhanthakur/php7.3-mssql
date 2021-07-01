@@ -49,3 +49,6 @@ RUN apt-get -y --fix-missing install git nano
 
 # Set timeout to 2000 for composer
 RUN export COMPOSER_PROCESS_TIMEOUT=2000
+
+# Set symfony environment to production
+RUN export SYMFONY_ENV=prod
