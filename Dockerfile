@@ -44,5 +44,8 @@ RUN apt-get update
 RUN env ACCEPT_EULA=Y apt-get -y --fix-missing install git libxml2-dev
 RUN docker-php-ext-install soap
 
-# Install git
-RUN apt-get -y --fix-missing install git
+# Install git and nano editor
+RUN apt-get -y --fix-missing install git nano
+
+# Set timeout to 2000 for composer
+RUN export COMPOSER_PROCESS_TIMEOUT=2000
